@@ -1,0 +1,20 @@
+{
+  "name": "sonaty",
+  "version": "1.0.1",
+  "description": "https://www.animaux-nature.com/bruitage-cri-animaux.php https://lasonotheque.org/search?q=nature https://lasonotheque.org/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm version patch",
+    "build:style": "minify src/app.css > public/css/app.min.css",
+    "build:js": "minify src/app.js > public/js/app.min.js",
+    "build:html": "ejs ./src/index.ejs -f ./src/data.json -o ./public/index.html",
+    "build": "predeploy && build:js && build:style && build:html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^3.1.5",
+    "minify": "^6.0.1"
+  }
+}
