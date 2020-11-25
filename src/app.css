@@ -1,3 +1,67 @@
 body{
     width:auto;
 }
+
+.nav-wrapper{
+    padding:0 20px !important;
+}
+
+#content{
+    padding:20px;
+}
+
+.card-panel h4{
+    margin-top:0;
+}
+
+.modal-content{
+    padding-bottom: 0 !important;
+}
+
+#modal1 div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#response{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.app-btn-float{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.main-form{
+    margin-top:30px;
+}
+
+#actions{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#actions.running .visible-when-running{
+    display: block !important;
+}
+#actions .visible-when-running{
+    display: none !important;
+}
+
+.app-btn + .app-btn{
+    margin-top:20px;
+}
+
+#actions.running .visible-when-not-running{
+    display:none;
+}
+.app-btn.start{
+    width: 100%;
+    max-width: 400px;
+}

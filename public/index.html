@@ -1,0 +1,89 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonaty</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/app.min.css">
+    <link rel="stylesheet" href="/css/app.min.css">
+</head>
+<body>
+    <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Sonaty</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger dropdown-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+      </ul>
+    </div>
+   
+  </nav>
+
+  <ul id='mobile-demo' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+  </ul>
+
+      
+    <div id="content">
+  <div class="card-panel">
+    <h4>Sonaty, votre jeu sonore</h4>
+    <span class="text-darken-2">
+      Ce site est un jeu conçue pour faire développer l'association et l'attention sonore.
+      Veuillez imprimer la plaquette A4 avec les pastilles pour jouer.</span>
+  </div>
+
+
+ <div class="main-form">
+  <div class="input-field col s12">
+    <select id="level" onchange="onChangeLevel()">
+      <option selected value="1">Niveau 1</option>
+      <option value="2">Niveau 2</option>
+    </select>
+    <label>Niveau de difficulté</label>
+  </div>
+ </div>
+  
+  <div id="actions">
+  
+    <button type="button" id="start" onclick="start()" class="app-btn waves-effect waves-teal btn-large start visible-when-not-running" >Démarrer</button>
+
+    <button type="button" id="stop" onclick="again()" class="app-btn red waves-effect waves-teal btn-large start visible-when-running" >Réécouter</button>
+
+    <button type="button" id="stop" onclick="found()" class="app-btn waves-effect waves-teal btn-large start visible-when-running" >Trouvé</button>
+  </div>
+  
+  <a href="print-items.html" target="_blank" class="app-btn-float btn-floating btn-large waves-effect waves-light"><i
+      class="material-icons">local_printshop</i></a>
+
+</div>
+
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>J'ai trouvé !</h4>
+      <div class="content">
+        <span id="response"></span>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Suivant</a>
+    </div>
+  </div>    
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.core.min.js"></script>
+
+    <script src="/js/app.min.js"></script>
+    <script src="/js/header.min.js"></script>
+    <script src="/js/content.min.js"></script>
+</body>
+</html>

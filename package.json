@@ -4,17 +4,19 @@
   "description": "https://www.animaux-nature.com/bruitage-cri-animaux.php https://lasonotheque.org/search?q=nature https://lasonotheque.org/",
   "main": "index.js",
   "scripts": {
+    "start": "http-server public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm version patch",
     "build:style": "minify src/app.css > public/css/app.min.css",
-    "build:js": "minify src/app.js > public/js/app.min.js",
-    "build:html": "ejs ./src/index.ejs -f ./src/data.json -o ./public/index.html",
-    "build": "predeploy && build:js && build:style && build:html"
+    "build:js": "minify src/app.js > public/js/app.min.js && minify src/header/index.js > public/js/header.min.js && minify src/content/index.js > public/js/content.min.js",
+    "build:html": "ejs ./src/index.ejs -f ./public/data.json -o ./public/index.html && ejs ./src/print-items.ejs -f ./public/data.json -o ./public/print-items.html",
+    "build": "npm run build:js && npm run build:style && npm run build:html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "ejs": "^3.1.5",
+    "http-server": "^0.12.3",
     "minify": "^6.0.1"
   }
 }

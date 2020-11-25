@@ -1,0 +1,15 @@
+{
+    "items":[{
+        "frLabel": "Chat",
+        "level": 1,
+        "enLabel": "Cat",
+        "sound":"/items/sound/chat.wav",
+        "image":"/items/img/animals/033-cat.png"
+    },{
+        "frLabel": "Chien",
+        "enLabel": "Dog",
+        "level": 1,
+        "sound":"/items/sound/chien-2.wav",
+        "image":"/items/img/animals/037-dog.png"
+    }]
+}
