@@ -1,6 +1,6 @@
 {
   "name": "sonaty",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "https://www.animaux-nature.com/bruitage-cri-animaux.php https://lasonotheque.org/search?q=nature https://lasonotheque.org/",
   "main": "index.js",
   "scripts": {
