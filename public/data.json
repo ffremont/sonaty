@@ -11,5 +11,293 @@
         "level": 1,
         "sound":"/items/sound/chien-2.wav",
         "image":"/items/img/animals/037-dog.png"
+    },{
+        "frLabel": "Abeille",
+        "enLabel": "Bee",
+        "level": 1,
+        "sound":"/items/sound/abeilles-3.wav",
+        "image":"/items/img/animals/049-bee.png"
+    },{
+        "frLabel": "Elephant",
+        "enLabel": "Elephant",
+        "level": 1,
+        "sound":"/items/sound/elephant-2.wav",
+        "image":"/items/img/animals/001-elephant.png"
+    },{
+        "frLabel": "Poule",
+        "enLabel": "Hen",
+        "level": 1,
+        "sound":"/items/sound/poule.wav",
+        "image":"/items/img/animals/002-hen.png"
+    },{
+        "frLabel": "Lion",
+        "enLabel": "Lion",
+        "level": 1,
+        "sound":"/items/sound/lion-3.wav",
+        "image":"/items/img/animals/032-lion.png"
+    },{
+        "frLabel": "Singe",
+        "enLabel": "Monkey",
+        "level": 1,
+        "sound":"/items/sound/SFB-chimpanze-2.mp3",
+        "image":"/items/img/animals/015-monkey.png"
+    },{
+        "frLabel": "Grenouille",
+        "enLabel": "Frog",
+        "level": 1,
+        "sound":"/items/sound/SFB-frogs.mp3",
+        "image":"/items/img/animals/004-frog.png"
+    },{
+        "frLabel": "Serpent",
+        "enLabel": "Snake",
+        "level": 1,
+        "sound":"/items/sound/sf_couleuvre_01.mp3",
+        "image":"/items/img/animals/008-snake.png"
+    },{
+        "frLabel": "Toucan",
+        "enLabel": "Toucan",
+        "level": 2,
+        "sound":"/items/sound/toucan.mp3",
+        "image":"/items/img/animals/014-toucan.png"
+    },{
+        "frLabel": "Oiseau",
+        "enLabel": "Bird",
+        "level": 1,
+        "sound":"/items/sound/chant-oiseau.wav",
+        "image":"/items/img/animals/006-parrot.png"
+    },{
+        "frLabel": "Hippopotame",
+        "enLabel": "Hippopotamus",
+        "level": 2,
+        "sound":"/items/sound/SFB-hippopotame-8.mp3",
+        "image":"/items/img/animals/044-hippopotamus.png"
+    },{
+        "frLabel": "Dauphin",
+        "enLabel": "Dolphin",
+        "level": 1,
+        "sound":"/items/sound/dauphin-2.wav",
+        "image":"/items/img/animals/005-dolphin.png"
+    },{
+        "frLabel": "Cochon",
+        "enLabel": "Pig",
+        "level": 1,
+        "sound":"/items/sound/cochon.wav",
+        "image":"/items/img/animals/022-pig.png"
+    },{
+        "frLabel": "Flamant rose",
+        "enLabel": "Flamingo",
+        "level": 2,
+        "sound":"/items/sound/flamant.wav",
+        "image":"/items/img/animals/011-flamingo.png"
+    },{
+        "frLabel": "Renne",
+        "enLabel": "Deer",
+        "level": 2,
+        "sound":"/items/sound/0247_renne.mp3",
+        "image":"/items/img/animals/027-deer.png"
+    },{
+        "frLabel": "Lama",
+        "enLabel": "Llama",
+        "level": 2,
+        "sound":"/items/sound/lama-2.mp3",
+        "image":"/items/img/animals/041-llama.png"
+    },{
+        "frLabel": "Koala",
+        "enLabel": "Koala",
+        "level": 2,
+        "sound":"/items/sound/koala-2.mp3",
+        "image":"/items/img/animals/036-koala.png"
+    },{
+        "frLabel": "Canard",
+        "enLabel": "Duck",
+        "level": 1,
+        "sound":"/items/sound/canard-2.mp3",
+        "image":"/items/img/animals/025-duck.png"
+    },{
+        "frLabel": "Vache",
+        "enLabel": "Cow",
+        "level": 1,
+        "sound":"/items/sound/vache-2.mp3",
+        "image":"/items/img/animals/cow.png"
+    },{
+        "frLabel": "Renard",
+        "enLabel": "Fox",
+        "level": 2,
+        "sound":"/items/sound/renard-2.mp3",
+        "image":"/items/img/animals/fox.png"
+    },{
+        "frLabel": "Moustique",
+        "enLabel": "Mosquito",
+        "level": 1,
+        "sound":"/items/sound/moustique-2.mp3",
+        "image":"/items/img/animals/mosquito.png"
+    },{
+        "frLabel": "Mouette",
+        "enLabel": "Seagull",
+        "level": 1,
+        "sound":"/items/sound/mouette-2.mp3",
+        "image":"/items/img/animals/seagull.png"
+    },{
+        "frLabel": "Loup",
+        "enLabel": "Wolf",
+        "level": 1,
+        "sound":"/items/sound/loup-2.mp3",
+        "image":"/items/img/animals/wolf.png"
+    },{
+        "frLabel": "Dindon",
+        "enLabel": "Turkey",
+        "level": 1,
+        "sound":"/items/sound/dindon-2.mp3",
+        "image":"/items/img/animals/turkey.png"
+    },{
+        "frLabel": "Cigale",
+        "enLabel": "Cicada",
+        "level": 2,
+        "sound":"/items/sound/cigales-2.mp3",
+        "image":"/items/img/animals/cicada.png"
+    },{
+        "frLabel": "Chemeau",
+        "enLabel": "Camel",
+        "level": 2,
+        "sound":"/items/sound/chameau-2.mp3",
+        "image":"/items/img/animals/047-camel.png"
+    },{
+        "frLabel": "Baleine",
+        "enLabel": "Whale",
+        "level": 2,
+        "sound":"/items/sound/baleine.mp3",
+        "image":"/items/img/animals/007-whale.png"
+    },{
+        "frLabel": "Ane",
+        "enLabel": "Donkey",
+        "level": 1,
+        "sound":"/items/sound/ane-2.mp3",
+        "image":"/items/img/animals/donkey.png"
+    },{
+        "frLabel": "Cheval",
+        "enLabel": "Horse",
+        "level": 1,
+        "sound":"/items/sound/cheval.wav",
+        "image":"/items/img/animals/horse.png"
+    },{
+        "frLabel": "Réveil",
+        "enLabel": "alarm",
+        "level": 2,
+        "sound":"/items/sound/reveil.mp3",
+        "image":"/items/img/objects/alarm-clock.png"
+    },{
+        "frLabel": "Téléphone",
+        "enLabel": "phone",
+        "level": 1,
+        "sound":"/items/sound/phone.mp3",
+        "image":"/items/img/objects/phone.png"
+    },{
+        "frLabel": "Sèche-cheveux",
+        "enLabel": "Hair dryer",
+        "level": 1,
+        "sound":"/items/sound/hair-dryer.mp3",
+        "image":"/items/img/objects/hairdryer.png"
+    },{
+        "frLabel": "Aspirateur",
+        "enLabel": "Vacuum",
+        "level": 1,
+        "sound":"/items/sound/aspi_court.mp3",
+        "image":"/items/img/objects/vacuum.png"
+    },{
+        "frLabel": "Toilette",
+        "enLabel": "Toilet",
+        "level": 1,
+        "sound":"/items/sound/sf_chasse_deau.mp3",
+        "image":"/items/img/objects/toilet.png"
+    },{
+        "frLabel": "Machine à laver",
+        "enLabel": "Washing machine",
+        "level": 2,
+        "sound":"/items/sound/washing.mp3",
+        "image":"/items/img/objects/washing-machine.png"
+    },{
+        "frLabel": "Douche",
+        "enLabel": "Shower",
+        "level": 2,
+        "sound":"/items/sound/2578_shower.mp3",
+        "image":"/items/img/objects/shower.png"
+    },{
+        "frLabel": "Pluie",
+        "enLabel": "Rain",
+        "level": 2,
+        "sound":"/items/sound/7609_rain.mp3",
+        "image":"/items/img/others/rain.png"
+    },{
+        "frLabel": "Vent",
+        "enLabel": "Wind",
+        "level": 2,
+        "sound":"/items/sound/7933_vent.mp3",
+        "image":"/items/img/others/wind.png"
+    },{
+        "frLabel": "Orage",
+        "enLabel": "Storm",
+        "level": 2,
+        "sound":"/items/sound/lightining.mp3",
+        "image":"/items/img/others/storm.png"
+    },{
+        "frLabel": "Tracteur",
+        "enLabel": "Truck",
+        "level": 2,
+        "sound":"/items/sound/sf_tracteur_01.mp3",
+        "image":"/items/img/objects/bulldozer.png"
+    },{
+        "frLabel": "Toast",
+        "enLabel": "Taast",
+        "level": 2,
+        "sound":"/items/sound/sf_trinquer.mp3",
+        "image":"/items/img/objects/toast.png"
+    },{
+        "frLabel": "Piano",
+        "enLabel": "Piano",
+        "level": 1,
+        "sound":"/items/sound/10838_piano.mp3",
+        "image":"/items/img/music/003-grand piano.png"
+    },{
+        "frLabel": "Guitare",
+        "enLabel": "Guitare",
+        "level": 1,
+        "sound":"/items/sound/14603_guitare.mp3",
+        "image":"/items/img/music/011-acoustic guitar.png"
+    },{
+        "frLabel": "Xylophone",
+        "enLabel": "xylophone",
+        "level": 2,
+        "sound":"/items/sound/17884_xylo.mp3",
+        "image":"/items/img/music/025-xylophone.png"
+    },{
+        "frLabel": "Maracas",
+        "enLabel": "maracas",
+        "level": 1,
+        "sound":"/items/sound/2972_maracas.mp3",
+        "image":"/items/img/music/041-maracas.png"
+    },{
+        "frLabel": "Flûte",
+        "enLabel": "flute",
+        "level": 1,
+        "sound":"/items/sound/7635_flute.mp3",
+        "image":"/items/img/music/039-flute.png"
+    },{
+        "frLabel": "Violon",
+        "enLabel": "violin",
+        "level": 2,
+        "sound":"/items/sound/9901_violon.mp3",
+        "image":"/items/img/music/018-violin.png"
+    },{
+        "frLabel": "Batterie",
+        "enLabel": "drum",
+        "level": 2,
+        "sound":"/items/sound/2297_batterie.mp3",
+        "image":"/items/img/music/038-drumset.png"
+    },{
+        "frLabel": "Trompette",
+        "enLabel": "trumpet",
+        "level": 2,
+        "sound":"/items/sound/17111_trompette.mp3",
+        "image":"/items/img/music/035-trumpet.png"
     }]
 }

@@ -4,6 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonaty</title>
 
+    <link rel="icon" href="/logo.png" />
+    <meta name="theme-color" content="#ee6e73" />
+    <meta name="description" content="Application Sonaty" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+  
+    <link rel="manifest" href="/manifest.json" />
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,5 +31,15 @@
     <script src="/js/app.min.js"></script>
     <script src="/js/header.min.js"></script>
     <script src="/js/content.min.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register('/my-sw.js', {
+              scope: '/'
+            })
+            .then(() => console.log('sw registered'))
+            .catch(e => console.error(e));
+        }
+      </script>
 </body>
 </html>

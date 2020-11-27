@@ -7,11 +7,9 @@
     <title>Sonaty</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <style>
         @page {
@@ -26,7 +24,6 @@
         .sheet {
             width: auto !important;
             height: auto !important;
-            /*padding: 2.13cm 0cm;*/
             padding-top: 2.0cm;
             padding-right: 0cm;
             padding-left: 1cm;
@@ -37,12 +34,10 @@
         .sheet>.line {
             display: flex;
             width: 20cm;
-            /*justify-content: space-between;*/
         }
 
         .label {
             font-size: 11px;
-            font-family: 'Gloria Hallelujah', 'sans-serif';
 
             width: 40mm;
             height: 15.35mm;
@@ -102,13 +97,23 @@
             font-size: 5vh;
         }
 
-        .label img{
-            border-radius:3px;
-            
+        .label img {
+            border-radius: 3px;
+
             padding: 6px;
         }
-        .level-1 img{
+
+        .level-1 img {
             border: 4px solid #ffab00;
+        }
+
+        .level-2 img {
+            border: 4px solid #e65100;
+        }
+
+        img{
+            width: 2.5cm !important;
+            max-width: inherit !important;
         }
 
         @media print {
@@ -127,17 +132,12 @@
 
         .A4.v2 .label {
             width: 42mm;
-            height: 16.35mm;
+            height: 35mm;
             padding: 3mm;
-
         }
 
         .msg {
             margin: 2px;
-        }
-
-        pre.msg {
-            font-family: 'Gloria Hallelujah', 'sans-serif';
         }
     </style>
 
@@ -146,20 +146,21 @@
 
 
 <body class="A4 v2">
-    <section id="sheet" class="sheet padding-5mm">
 
-    </section>
 
 
     <button type="button" class="print" onclick="window.print();return false;">Imprimer</button>
     <script>
-        const SIZE=24;
-        function build(items) {
+        const SIZE = 48;
+
+        
+        function build(items, idPage) {
             const buildLabel = (item) => {
 
                 return ` <div class = "label">
                     <div style="margin-right: 5px;" class="level-${item.level}">
                         <img class="responsive-img" src="${item.image}">
+                        <div class="label-item">${item.frLabel}</div>
                     </div>
                     </div>`
             };
@@ -174,8 +175,8 @@
             let line = $("<div class='line'></div>")
 
             items.forEach(i => {
-                if ((index > 0) && (index % 4 === 0)) {
-                    $("#sheet").append(line)
+                if ((index > 0) && (index % 6 === 0)) {
+                    $('#'+idPage).append(line)
                     line = $("<div class='line'></div>")
                 }
 
@@ -189,16 +190,30 @@
             var resteDivisionEuclidienne = (index) % 4;
             console.log(`index : ${index}, reste : ${resteDivisionEuclidienne}`)
             if (resteDivisionEuclidienne > 0) {
-                for (var i = 0; i < (4 - resteDivisionEuclidienne); i++) {
+                for (var i = 0; i < (6 - resteDivisionEuclidienne); i++) {
                     line.append(empty());
                 }
             }
-            $("#sheet").append(line)
+            $('#'+idPage).append(line)
         }
 
-        (function(){
-        fetch('/data.json')
-    .then(d => d.json()).then(data => window.build(data.items))})();
+        function newPage(level, items) {
+            const idPage = `page-${level}`;
+            $('.A4').append($(`
+            <section id="${idPage}" class="sheet padding-5mm">
+                <h1>Niveau ${level}</h1>
+            </section>
+            `))
+            build(items.filter(i => i.level === level), idPage);
+        }
+
+        (function () {
+            fetch('/data.json')
+                .then(d => d.json()).then(data => {
+                    [...new Set(data.items.map(i => i.level))].forEach(level => window.newPage(level, data.items))
+                    
+                })
+        })();
     </script>
 </body>
 

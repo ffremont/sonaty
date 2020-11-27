@@ -21,13 +21,19 @@
   
     <button type="button" id="start" onclick="start()" class="app-btn waves-effect waves-teal btn-large start visible-when-not-running" >Démarrer</button>
 
-    <button type="button" id="stop" onclick="again()" class="app-btn red waves-effect waves-teal btn-large start visible-when-running" >Réécouter</button>
-
     <button type="button" id="stop" onclick="found()" class="app-btn waves-effect waves-teal btn-large start visible-when-running" >Trouvé</button>
+
+    <button type="button" id="stop" onclick="again()" class="app-btn orange waves-effect waves-teal btn-large start visible-when-running" >Réécouter</button>
+
+ 
+    <a href="print-items.html" target="_blank" class="app-btn-float btn-floating btn-large waves-effect waves-light  visible-when-not-running"><i
+      class="material-icons">local_printshop</i></a>
+
+      <button type="button" onclick="stop()" class="app-btn-float btn-floating btn-large waves-effect waves-light red  visible-when-running"><i
+        class="material-icons">stop</i></a>
   </div>
   
-  <a href="print-items.html" target="_blank" class="app-btn-float btn-floating btn-large waves-effect waves-light"><i
-      class="material-icons">local_printshop</i></a>
+  
 
 </div>
 
@@ -39,10 +45,11 @@
     <div class="modal-content">
       <h4>J'ai trouvé !</h4>
       <div class="content">
+        <img src="" id="img-response"/>
         <span id="response"></span>
       </div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Suivant</a>
+      <a href="#!" onclick="next()" class="modal-close waves-effect waves-green btn-flat">Suivant</a>
     </div>
   </div>
